@@ -1,0 +1,99 @@
+/* Login.css - Dedicated styles for Login page */
+
+.login-container {
+    max-width: 350px;
+    width: 100%;
+    min-height: 667px; /* Fixed mobile height */
+    margin: 0 auto;
+    padding: 4px 25px;
+    background: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Pushes content to top */
+  }
+  
+  .login-header {
+    margin-bottom: 20px;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .login-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+  }
+  
+  .login-subtitle {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  .form-group label {
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    background: white;
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #6c25ff;
+    z-index: 1;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 14px 6px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #D3BFFF;
+    box-shadow: 0 0 0 1px #D3BFFF;
+  }
+  
+  .login-button {
+   /* Keep all existing styles */
+   width: 100%;
+   padding: 14px 6px;
+   background-color: #6c25ff;
+   color: white;
+   border: none;
+   border-radius: 6px;
+   font-weight: 600;
+   font-size: 14px;
+   cursor: pointer;
+   transition: background-color 0.3s ease; 
+   
+  }
+  .login-button.disabled,
+  .login-button:disabled {
+    background-color: #cccccc; /* Grey color */
+    cursor: not-allowed;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .login-container {
+      min-height: 100vh;
+      padding: 30px 20px;
+      padding-top: 80px;
+    }
+  }

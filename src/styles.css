@@ -1,0 +1,106 @@
+/* styles.css */
+
+/* Base Styles */
+body {
+  font-family: 'adobe-clean', sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+/* Mobile Frame Container */
+.welcome-mobile-container {
+  width: 100%;
+  max-width: 375px;
+  min-height: 667px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* Content Section - Updated for left alignment */
+.welcome-content {
+  margin-top: auto;
+  text-align: left; /* Changed from center to left */
+  padding: 0;
+}
+
+.welcome-content h1 {
+  font-size: 24px; /* Reduced from 28px */
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+  line-height: 1.2;
+  text-align: left; /* Explicit left alignment */
+}
+
+.welcome-text {
+  text-align: left; /* Left align the paragraph */
+}
+
+.welcome-text p {
+  font-size: 16px;
+  color: #666;
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+/* Button Section (unchanged) */
+.welcome-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-sizing: border-box;
+}
+
+.welcome-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.primary-btn {
+  background-color: #6c25ff;
+  color: white;
+}
+
+.login-btn {
+  background-color:  #D3BFFF;
+  color: #000;
+  /*border: 1px solid #6c25ff;*/
+}
+
+/* Responsive styles remain the same */
+@media (max-width: 374px) {
+  .welcome-mobile-container {
+    min-height: 100vh;
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 376px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .welcome-mobile-container {
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+  }
+}

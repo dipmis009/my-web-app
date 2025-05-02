@@ -1,0 +1,116 @@
+/* Main Container */
+.ca-container {
+  max-width: 420px; /* increase from 300px or so */
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+}  
+  /* Header Styles */
+  .ca-header {
+    margin-bottom: 30px;
+  }
+  
+  .ca-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+  }
+  
+  /* Form Styles */
+  .ca-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .ca-form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 24px;
+  }
+  
+  .ca-label {
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    background: white;
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #6c25ff; /* New color */
+    z-index: 1;
+    margin-bottom: 0; /* Remove default margin */
+  }
+  
+  .ca-label.required::after {
+    content: '*';
+    color: #6c25ff;
+    margin-left: 4px;
+  }
+  
+  .ca-input {
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    position: relative; /* Add this */
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+  
+  .ca-input:focus {
+    outline: none;
+    border-color: #6c25ff;
+    box-shadow: 0 0 0 1px #6c25ff;
+  }
+  
+  /* Radio Button Group */
+  .ca-radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+  }
+  
+  .ca-radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .ca-radio {
+    accent-color: #6c25ff;
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Submit Button */
+  .ca-submit-btn {
+    background-color: #6c25ff;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+  }
+  
+  .ca-submit-btn:hover {
+    background-color: #5a1ad1;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 374px) {
+    .ca-container {
+      min-height: 100vh;
+      padding: 25px 15px;
+    }
+  }

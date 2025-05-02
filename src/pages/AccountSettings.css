@@ -1,0 +1,127 @@
+/* Profile Section Styles */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 25px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .profile-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #6c25ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar-initials {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .profile-info h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 4px 0;
+  }
+  
+  .profile-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  
+.account-settings-container {
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    box-sizing: border-box;
+    min-height: 667px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header with visual separation */
+  .account-header {
+    background: #efeff0; /* Light purple background */
+    padding: 20px 25px;
+    border-bottom: 1px solid #efeff0; /* Subtle border */
+    box-shadow: 0 2px 4px rgba(108, 37, 255, 0.05); /* Soft shadow */
+  }
+  
+  .account-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black; 
+    margin: 0; /* Remove default margins */
+  }
+  
+  /* Content wrapper */
+  .account-content-wrapper {
+    padding: 25px;
+    flex-grow: 1;
+  }
+  
+  /* Rest of the styles remain the same */
+  .profile-info {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .profile-info h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+  }
+  
+  .profile-info p {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .account-content {
+    line-height: 0.7;
+    position: relative; /* For pseudo-element positioning */
+    padding-bottom: 20px; /* Space before border */
+    margin-bottom: 20px; /* Space after border */
+  }
+  
+  .account-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }  
+  /* Add the dotted border using pseudo-element */
+  .account-content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 2px dotted #d6d6d6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .account-settings-container {
+      min-height: 100vh;
+    }
+    
+    .account-header {
+      padding: 15px 20px;
+    }
+    
+    .account-content-wrapper {
+      padding: 20px;
+    }
+  }
